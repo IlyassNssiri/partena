@@ -7,31 +7,27 @@
     font-family: 'Poppins', sans-serif;
   }
 
-.hidden{
-    z-index: 100;
-    
-}
 .text-sm{
     z-index: 100;
 }
 a{
     z-index: 10;
 }
-
-  .showcase{
+  .header-video{
     position: static;
+    top: 0;
     right: 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 600px;
     padding-left: 100px;
     padding-right: 100px;
     justify-content: space-between;
-    background: #111;
-    transition: 0.5s;
+    /* background: #111; */
+    /* transition: 0.5s; */
     z-index: 2;
   }
-  
-  .showcase video
+
+  .header-video video
   {
     position: absolute;
     top: 0;
@@ -39,23 +35,13 @@ a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
-  }
-  
-  .overilay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #94a3aa;
-    mix-blend-mode: overlay;
+    opacity: 0.87;
   }
    
   .text
   {
       margin-right: 3%;
-      margin-top: 10%;
+      margin-top: 20%;
       position: relative;
       z-index: 10;
   }
@@ -64,7 +50,7 @@ a{
   {
     font-size: 4em;
     font-weight: 700;
-    color: #fff;
+    color: 	#4682B4;
     line-height: 1em;
     text-transform: uppercase;
     margin: 10px;
@@ -73,7 +59,7 @@ a{
   {
     font-size: 2em;
     font-weight: 600;
-    color: #fff;
+    color: #ADD8E6;
     line-height: 1em;
     text-transform: uppercase;
   }
@@ -128,13 +114,22 @@ a{
   {
     transform: scale(0.5) translateY(-15px);
   }
-  
-  
-  @media (max-width: 991px)
+  @media (max-width: 1300px)
   {
-    .showcase
+    .header-video
     {
       padding: 40px;
+      min-height: 900px;
+    }
+  }
+  
+  /* @media (max-width: 991px) */
+  @media only screen and (max-width: 600px)
+  {
+    .header-video
+    {
+      padding: 40px;
+      min-height: 900px;
     }
     .text h2
     {
@@ -158,8 +153,20 @@ a{
       position: relative;
   }
   */
-  
-  .navbar{      
+/*   .logo{
+ */    /* position: fixed; */
+ /*      width: 160px;
+      cursor: pointer;
+  }
+  .navbar{
+    background-color: blueviolet;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  } */
+
+  /* .navbar0{     
+    position: fixed;
       top: 0;
       width: 100%;
       height: 15vh;
@@ -167,10 +174,10 @@ a{
       align-items: center;
       z-index: 1000;
   }
-  
-  nav{
-    position: fixed;
-      flex: 1;
+   */
+ /*  nav{ */
+      /* position: fixed; */
+ /*      flex: 1;
       padding-left: 180px;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -187,12 +194,8 @@ a{
       font-weight: bold;
       font-family: "Gill Sans", sans-serif;
       font-size: 19px;
-  }
-  .logo{
-    position: fixed;
-      width: 160px;
-      cursor: pointer;
-  }
+  } */
+
   /*
   .social-links{
       transform: rotate(-90deg);
@@ -261,7 +264,7 @@ a{
   /*----------------- INTRO-----------------------*/
   .intro{
       text-align: center;
-      margin: 5% 20%;
+      margin: 0 20%;
   }
   .intro h2{
       font-weight: bold;
@@ -273,18 +276,39 @@ a{
   }
 
   /*----------------- section2-----------------------*/
-
+.cont-global{
+  width: 100%;
+  padding: 60px 90px;
+}
   .gamify-img{
-    margin-right: 32px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    width: 400px;
-    height: 500px;
+    margin-left: 170px;
+    margin-top: 55px;
+    width: 450px;
+    height: 540px;
     border-radius: 20px;
   }
 
+  @media (max-width: 600px)
+  {
+    .gamify-img{
+      margin: 0;
+      width: 400px;
+      height: 500px;
+      border-radius: 20px;
+    }
+  }
+  @media (max-width: 1260px)
+  {
+    .gamify-img{
+      margin: 0;
+      width: 400px;
+      height: 500px;
+      border-radius: 20px;
+    }
+  }
+
   .features{
-    margin-left: 95px;
+    margin: 0 ;
   }
 
   .feature {

@@ -1,6 +1,6 @@
 <video src="{{ asset('img/entrepren.mp4'); }}" muted loop autoplay></video>
 
-            <div class="overlay"></div>
+            <!-- <div class="overlay"></div> -->
 
             <div class="text">
                 <h2>entrepreneurship </h2> 
